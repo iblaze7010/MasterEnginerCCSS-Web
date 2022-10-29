@@ -177,9 +177,9 @@
         /*Shrinking for mobile*/
         @media (max-width: 368px) {
           .wave {
-            height: 40px;
+            height: 105px;
             min-height: 40px;
-            bottom: -139px;
+            bottom: -161px;
           }
         
         }
