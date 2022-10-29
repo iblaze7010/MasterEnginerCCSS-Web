@@ -175,11 +175,12 @@
         }
         
         /*Shrinking for mobile*/
-        @media (max-width: 368px) {
+        @media (max-width: 500px) {
           .wave {
-            height: 105px;
+            height: 119px;
             min-height: 40px;
-            bottom: -161px;
+            bottom: -163px;
+            max-height: 157px;
           }
         
         }
