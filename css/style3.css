@@ -137,6 +137,7 @@
         
         
         
+        
         /* Animation */
         
         .parallax > use {
@@ -174,10 +175,11 @@
         }
         
         /*Shrinking for mobile*/
-        @media (max-width: 768px) {
-          .waves {
+        @media (max-width: 368px) {
+          .wave {
             height: 40px;
             min-height: 40px;
+            bottom: -139px;
           }
         
         }
