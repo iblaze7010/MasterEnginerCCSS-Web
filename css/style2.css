@@ -295,19 +295,28 @@ a/********** Template CSS **********/
     margin-bottom: 60px;
 }
 
-.portfolio-title {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 160px;
-    padding: 0 30px;
-    right: 10px;
-    left: 10px;
-    bottom: -90px;
-    background: #FFFFFF;
-    z-index: 3;
+
+
+@media only screen  and (max-width:768px){
+    .portfolio-title {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 169px;
+        width: auto;
+        padding: 0px 6px;
+        right: -22px;
+        left: -22px;
+        bottom: -90px;
+        background: #ffffffc9;
+        z-index: 3;
+        border: 0px  solid white;
+        border-radius: 22px;
+        margin: auto;
+    }  
 }
+
 
 .portfolio-btn {
     position: absolute;
@@ -554,21 +563,22 @@ a/********** Template CSS **********/
 .portfolio-item {
     margin-bottom: 60px;
 }
-
+@media only screen  and (min-width:768px){
 .portfolio-title {
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 160px;
-    padding: 0 30px;
-    right: 10px;
-    left: 10px;
-    bottom: -90px;
+    padding: 0 17px;
+    right: -8px;
+    left: -8px;
+    bottom: -92px;
     background: #ffffffc9;
     z-index: 3;
     border: 0px  solid white;
     border-radius:22px;
+}
 }
 
 .portfolio-btn {
@@ -712,7 +722,7 @@ a/********** Template CSS **********/
     left: 6px;
     right: 6px;
     bottom: 6px;
-    background: rgb(255 247 247);
+    background: rgb(5 5 5);
     z-index: 2;
 }
 
@@ -723,7 +733,7 @@ a/********** Template CSS **********/
     left: 0;
     width: 50%;
     height: 100%;
-    background: rgb(255 255 255 / 89%);
+    background: rgb(8 5 41 / 89%);
     pointer-events: none;
 }
 
@@ -740,10 +750,19 @@ a/********** Template CSS **********/
 }
 
 .container .box .content p{
-    font-size: 1.1em;
-    color: #000;
+    font-size: 1.031em;
+    color: #fff;
+    margin-bottom: 7px;
+    line-height: 1.4em;
+    font-family: monospace;
+}
+
+.container .box .content p2{
+    font-size: 0.86em;
+    color: #fff;
     margin-bottom: 10px;
     line-height: 1.4em;
+    font-family: monospace;
 }
 
 .container .box .content a{
@@ -841,3 +860,4 @@ imgr{
     border: 0px  solid white;
     border-radius:22px;
 }
+
