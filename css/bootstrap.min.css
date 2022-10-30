@@ -7234,7 +7234,7 @@ textarea.form-control-lg {
 }
 
 .mb-0 {
-    margin-bottom: 0 !important
+    margin-bottom: -1px !important;
 }
 
 .mb-1 {
@@ -7828,7 +7828,7 @@ textarea.form-control-lg {
 }
 
 .bg-dark {
-    background-color: #040F28 !important
+    background-color: #040319f0 !important;
 }
 
 .bg-body {

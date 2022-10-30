@@ -41,6 +41,7 @@
         return false;
     });
 
+    const menuLinks = document.querySelectorAll('.ul a[href^="#"]');
 
     // Portfolio isotope and filter
     var portfolioIsotope = $('.portfolio-container').isotope({
@@ -54,7 +55,15 @@
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
 
+    $( document ).ready(function() {
+ 
 
+        portfolioIsotope.isotope({filter:('.first')});
+
+y
+
+
+    });
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
