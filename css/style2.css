@@ -338,6 +338,7 @@ a/********** Template CSS **********/
     transition: .5s;
     z-index: 1;
     background: rgba(4, 15, 40, .7);
+    
 }
 
 .portfolio-box::before {
@@ -564,8 +565,10 @@ a/********** Template CSS **********/
     right: 10px;
     left: 10px;
     bottom: -90px;
-    background: #FFFFFF;
+    background: #ffffffc9;
     z-index: 3;
+    border: 0px  solid white;
+    border-radius:22px;
 }
 
 .portfolio-btn {
@@ -591,12 +594,12 @@ a/********** Template CSS **********/
 .portfolio-box::after {
     position: absolute;
     content: "";
-    width: 0;
-    height: 100%;
-    top: 0;
+    width: 5;
+    height: 91%;
+    top: 5;
     transition: .5s;
     z-index: 1;
-    background: rgba(4, 15, 40, .7);
+    background: rgb(4 15 40 / 30%);
 }
 
 .portfolio-box::before {
@@ -659,9 +662,9 @@ a/********** Template CSS **********/
 .container .box{
     position: relative;
     width: 320px;
-    height: 220px;
+    height: 103px;
     color: #fff;
-    background: #111;
+    background: #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -680,7 +683,7 @@ a/********** Template CSS **********/
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, #313130, #0c178e);
+    background: linear-gradient(45deg, #3701ff, #3701ff);
 }
 
 .container .box::after{
@@ -690,17 +693,17 @@ a/********** Template CSS **********/
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(45deg, #313130, #0c178e);
-    filter: blur(10px);
+    background: linear-gradient(45deg, #3501f7, #3701ff);
+    filter: blur(6px);
 }
 .container .box:nth-child(2)::before,
 .container .box:nth-child(2)::after{
-    background: linear-gradient(315deg, #313130, #0c178e);
+    background: linear-gradient(315deg, #3701ff, #3301ea);
 }
 
 .container .box:nth-child(3)::before,
 .container .box:nth-child(3)::after{
-    background: linear-gradient(315deg, #313130, #0c178e);
+    background: linear-gradient(315deg, #3701ff, #3701ff);
 }
 
 .container .box span{
@@ -709,7 +712,7 @@ a/********** Template CSS **********/
     left: 6px;
     right: 6px;
     bottom: 6px;
-    background: rgba(0,0,0,0.6);
+    background: rgb(255 247 247);
     z-index: 2;
 }
 
@@ -720,7 +723,7 @@ a/********** Template CSS **********/
     left: 0;
     width: 50%;
     height: 100%;
-    background: rgba(255,255,255,0.1);
+    background: rgb(255 255 255 / 89%);
     pointer-events: none;
 }
 
@@ -732,13 +735,13 @@ a/********** Template CSS **********/
 
 .container .box .content h2{
     font-size: 2em;
-    color: #fff;
+    color: #fff3f3;
     margin-bottom: 10px;
 }
 
 .container .box .content p{
     font-size: 1.1em;
-    color: #fff;
+    color: #000;
     margin-bottom: 10px;
     line-height: 1.4em;
 }
@@ -832,4 +835,9 @@ video{
     margin: auto;
     position: relative;
     z-index: 2;
+}
+
+imgr{
+    border: 0px  solid white;
+    border-radius:22px;
 }

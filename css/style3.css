@@ -184,3 +184,6 @@
           }
         
         }
+        .bg-naranja{
+          background:radial-gradient( ellipse, #d26039 25%, #e8903a 66%);
+        }

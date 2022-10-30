@@ -1,3 +1,5 @@
+const menuLinks = document.querySelectorAll('.menun a[href^="#"]');
+
 function test(){
   var tabsNewAnim = $('#navbarSupportedContent');
   var selectorNewAnim = $('#navbarSupportedContent').find('li').length;
@@ -27,6 +29,28 @@ function test(){
     });
   });
 }
+
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      const id = entry.target.getAttribute("id");
+      const menuLink = document.querySelector(`.menun a[href="#${id}"]`);
+
+
+      if (entry.isIntersecting) {
+        document.querySelector(".menun a.h4").classList.remove("h4");
+        document.querySelector(".menun a.text-dangerr").classList.remove("text-dangerr");
+        menuLink.classList.add("h4");
+        menuLink.classList.add("text-dangerr");
+                     
+
+      }
+    });
+  },
+  { rootMargin: "-30% 0px -70% 0px" }
+);
+
 $(document).ready(function(){
   setTimeout(function(){ test(); });
 });
@@ -35,4 +59,14 @@ $(window).on('resize', function(){
 });
 $(".navbar-toggler").click(function(){
   setTimeout(function(){ test(); });
+});
+
+
+menuLinks.forEach((menuLink) => {
+
+  const hash = menuLink.getAttribute("href");
+  const target = document.querySelector(hash);
+  if (target) {
+    observer.observe(target);
+  }
 });
