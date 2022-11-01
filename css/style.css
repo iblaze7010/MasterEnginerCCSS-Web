@@ -457,6 +457,8 @@ i {
         align-items: center;
         background-color: #0e0e0e1c;
     }
-
-
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+        .font-1{
+      font-family: 'Ubuntu', sans-serif;
+    }
 

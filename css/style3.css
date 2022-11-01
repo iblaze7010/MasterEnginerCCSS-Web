@@ -14,8 +14,8 @@
 }
 .intro__text {
   color: white;
-  font-family: inherit;
   font-weight: 800;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 3em;
   text-transform: uppercase;
   opacity: 0;
