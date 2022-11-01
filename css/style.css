@@ -24,7 +24,7 @@ i {
   color: #fff;
 }
 .navbar-mainbg {
-  background-color: #001d2e;
+  background-color: #04043c;
   padding: 0px;
 }
 #navbarSupportedContent {
@@ -108,7 +108,7 @@ i {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #001d2e;
+  background-color: #04043c;
 }
 .hori-selector .right:before {
   bottom: 0;
@@ -328,7 +328,7 @@ i {
 	
 	display: flex;
 	
-	animation: modal 1s 1s forwards;
+	animation: modal 1s 3s forwards;
 	visibility: hidden;
 	opacity: 0;
 }
