@@ -81,6 +81,30 @@
   opacity: 1;
   transform: translatey(0);
 }
+.intro__btn3 {
+  color: #ec5d06;
+  border-radius: 4px;
+  font-size: 1em;
+  background:#d4550d1a;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  opacity: 0;
+  transform: translatey(-100%);
+  transition: all 1s ease 1s, background 500ms ease;
+  position: relative;
+  z-index: 1;
+  font-family: 'FontAwesome';
+}
+.intro__btn3:hover {
+  background: rgba(233, 143, 9, 0.15);
+}
+.intro__btn3:focus {
+  outline: none;
+}
+.intro__btn3.start {
+  opacity: 1;
+  transform: translatey(0);
+}
 
 .box {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
