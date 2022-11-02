@@ -510,4 +510,9 @@
             opacity: 0;
           }
         }
+        @media only screen  and (max-width:768px){
+        .center-text-cont{
+          text-align: center;
+        }
+      }
         
