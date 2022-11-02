@@ -14,8 +14,8 @@
 }
 .intro__text {
   color: white;
+  font-family: inherit;
   font-weight: 800;
-  font-family: 'Ubuntu', sans-serif;
   font-size: 3em;
   text-transform: uppercase;
   opacity: 0;
@@ -438,5 +438,76 @@
           background: #ffcf4d;
           border: 1px solid rgba(255, 0, 88, 0.4);
           box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
+        }
+
+        .buttons {
+          min-width: 300px;
+          min-height: 60px;
+          font-family: "Nunito", sans-serif;
+          font-size: 22px;
+          text-transform: uppercase;
+          letter-spacing: 1.3px;
+          font-weight: 700;
+          color: #fefefe;
+          background: #141919;
+          background: linear-gradient(
+            90deg,
+            rgb(163 42 16) 0%,
+            rgb(231 130 12) 100%
+          );
+          border: none;
+          border-radius: 1000px;
+          box-shadow: 12px 12px 24px rgb(152 68 68 / 64%);
+          transition: all 0.3s ease-in-out 0s;
+          cursor: pointer;
+          outline: none;
+          position: relative;
+          padding: 10px;
+        }
+        
+
+        
+        .buttons:hover,
+        .buttons:focus {
+          color: #313133;
+          transform: translateY(-6px);
+        }
+        
+        .buttons:hover::before,
+        .buttons:focus::before {
+          opacity: 1;
+        }
+        
+        .buttons::after {
+          content: "";
+          width: 30px;
+          height: 30px;
+          border-radius: 100%;
+          border: 6px solid #ee0101;
+          position: absolute;
+          z-index: -1;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          animation: ring 1.5s infinite;
+        }
+        
+        .buttons:hover::after,
+        .buttons:focus::after {
+          animation: none;
+          display: none;
+        }
+        
+        @keyframes ring {
+          0% {
+            width: 30px;
+            height: 30px;
+            opacity: 1;
+          }
+          100% {
+            width: 300px;
+            height: 300px;
+            opacity: 0;
+          }
         }
         
