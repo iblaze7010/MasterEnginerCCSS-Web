@@ -87,7 +87,7 @@
   font-size: 1em;
   background:#d4550d1a;
   text-transform: uppercase;
-  padding: 0.5em 1em;
+  padding: 0.6em 1em;
   opacity: 0;
   transform: translatey(-100%);
   transition: all 1s ease 1s, background 500ms ease;
