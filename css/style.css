@@ -328,7 +328,7 @@ i {
 	
 	display: flex;
 	
-	animation: modal 1s 3s forwards;
+	animation: modal 1s 1s forwards;
 	visibility: hidden;
 	opacity: 0;
 }
